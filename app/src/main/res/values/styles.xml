@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="logo_style">
+        <item name="android:layout_width">172dp</item>
+        <item name="android:layout_height">195dp</item>
+        <item name="android:src">@drawable/ic_logo</item>
+    </style>
+</resources>
