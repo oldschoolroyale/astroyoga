@@ -7,57 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
 
-   <ImageView
-       android:id="@+id/logo"
-       style="@style/logo_style"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"/>
-   <androidx.cardview.widget.CardView
-       android:id="@+id/date_card"
-       android:layout_width="wrap_content"
+   <fragment
+       android:id="@+id/mainNavHost"
+       android:name="androidx.navigation.fragment.NavHostFragment"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       app:defaultNavHost="true"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+       app:navGraph="@navigation/main_nav" />
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bottom_nav"
+       android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       app:layout_constraintTop_toBottomOf="@id/logo"
-       app:layout_constraintStart_toStartOf="@id/logo"
-       app:layout_constraintEnd_toEndOf="@id/logo"
-       >
-      <RelativeLayout
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:paddingStart="60dp"
-          android:paddingEnd="60dp"
-          android:paddingTop="1dp"
-          android:background="@drawable/custom_gradient"
-          android:paddingBottom="1dp">
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-            android:text="11 september"
-             android:textColor="@color/black"
-            android:fontFamily="@font/rancho_regular"
-            android:textSize="18sp"/>
-      </RelativeLayout>
-   </androidx.cardview.widget.CardView>
-
-   <androidx.cardview.widget.CardView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-      android:id="@+id/message_card"
-      app:layout_constraintTop_toBottomOf="@id/date_card"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent">
-      <RelativeLayout
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:background="@drawable/custom_gradient">
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:fontFamily="@font/rancho_regular"
-             android:textSize="13sp"
-             android:textColor="@color/black"
-             android:text="@string/lores_input"/>
-      </RelativeLayout>
-   </androidx.cardview.widget.CardView>
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:menu="@menu/bottom_menu"
+       android:background="@drawable/custom_gradient_blue"
+       app:itemIconTint="@color/custom_bottom_selection"
+       app:itemTextColor="@color/custom_bottom_selection"
+       />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

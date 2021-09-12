@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Astroyoga/app/src/main/res/drawable/custom_bottom_selection.xml" value="0.2203125" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Astroyoga/app/src/main/res/drawable/custom_gradient.xml" value="0.2203125" />
-        <entry key="..\:/Users/admin/AndroidStudioProjects/Astroyoga/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Astroyoga/app/src/main/res/drawable/custom_gradient_blue.xml" value="0.2203125" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Astroyoga/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/Astroyoga/app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Astroyoga/app/src/main/res/layout/fragment_main.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/Astroyoga/app/src/main/res/menu/bottom_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
